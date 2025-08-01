@@ -456,3 +456,15 @@ document.getElementById('signUpForm').addEventListener('submit', function(e) {
             alert(`Account created successfully for ${userData.firstName} ${userData.lastName}!`);
             // Here you would typically make an API call to create the account
         });
+	// Add smooth transitions for form switching
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
+</body>
+</html>
