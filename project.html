@@ -277,4 +277,38 @@ i
         }
     </style>
 </head>
+<body>
+    <div class="auth-container">
+        <div class="header">
+            <h1>EduLeave Pro</h1>
+            <p>Professional Lecture Leave Management System</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" onclick="showSignIn()">Sign In</button>
+                <button class="toggle-btn" onclick="showSignUp()">Sign Up</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <form class="sign-in-form" id="signInForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div style="position: relative;">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <span class="password-toggle" onclick="togglePassword('password')">👁️</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Sign In</button>
+                
+                <div class="forgot-password">
+                    <a href="#" onclick="showForgotPassword()">Forgot your password?</a>
+                </div>
+            </form>
 
