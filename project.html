@@ -440,4 +440,19 @@ function showForgotPassword() {
                 // Here you would typically make an API call to authenticate
             }
         });
-
+document.getElementById('signUpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('signUpPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            const formData = new FormData(this);
+            const userData = Object.fromEntries(formData);
+            
+            alert(`Account created successfully for ${userData.firstName} ${userData.lastName}!`);
+            // Here you would typically make an API call to create the account
+        });
