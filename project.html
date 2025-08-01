@@ -428,4 +428,16 @@ function togglePassword(inputId) {
 function showForgotPassword() {
             alert('Forgot password functionality would redirect to password reset page.');
         }
+// Form submission handlers
+        document.getElementById('signInForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simulate authentication
+            if (email && password) {
+                alert(`Welcome back! Redirecting to dashboard...`);
+                // Here you would typically make an API call to authenticate
+            }
+        });
 
