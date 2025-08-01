@@ -338,4 +338,44 @@ i
                     <input type="text" id="employeeId" name="employeeId" placeholder="Enter your employee ID" required>
                 </div>
                 
-
+<div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select your department</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="biology">Biology</option>
+                        <option value="english">English</option>
+                        <option value="history">History</option>
+                        <option value="economics">Economics</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select your position</option>
+                        <option value="lecturer">Lecturer</option>
+                        <option value="assistant-professor">Assistant Professor</option>
+                        <option value="associate-professor">Associate Professor</option>
+                        <option value="professor">Professor</option>
+                        <option value="department-head">Department Head</option>
+                        <option value="dean">Dean</option>
+                    </select>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="signUpPassword">Password</label>
+                            <div style="position: relative;">
+                                <input type="password" id="signUpPassword" name="password" placeholder="Create password" required>
+                                <span class="password-toggle" onclick="togglePassword('signUpPassword')">👁️</span>
+                            </div>
+                        </div>
+                    </div>
