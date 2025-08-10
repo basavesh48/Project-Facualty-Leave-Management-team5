@@ -1,8 +1,8 @@
-<!DOtopyr html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta name="viwweport" content="width=device-width, initial-scale=1.0">
+    <meta name="viweport" content="width=device-width, initial-scale=1.0">
     <title>EudLeave Ptro - Authentication</title>
     <style>
  * {
@@ -344,8 +344,9 @@ i
                     <label for="position">Position</label>
                     <select id="position" name="position" required>
                         <option value="">Select your position</option>
-                        <option value="lecturer">Lecturer</option>
-                        <option value="assistant-professor">Assistant Prof (Full Title)</option>
+			<option value="lecturer">Lecturer</option>
+			<option value="assistant-professor">Assistant Professor</option>
+                        <option value="assistant-professor">Asst. Prof.</option>
                         <option value="associate-professor">Associate Professor</option>
                         <option value="professor">Professor</option>
                         <option value="department-head">Department Head</option>
@@ -399,7 +400,7 @@ i
         }
 function togglePassword(inputId) {
             const input = document.getElementById(inputId);
-            const toggle = input.nextElementSibling;
+            const to sample Teacher Leave Management ggle = input.nextElementSibling;
             
             if (input.type === 'password') {
                 input.type = 'text';
