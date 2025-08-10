@@ -551,4 +551,59 @@ document.getElementById('signUpForm').addEventListener('submit', function(e) {
         }
     </style>
 </head>
->
+<body>
+    <div class="auth-container">
+        <div class="header">
+            <h1>EduLeave Pro</h1>
+            <p>Admin Login Portal</p>
+        </div>
+
+        <div class="form-container">
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminEmail">Admin Email</label>
+                    <input type="email" id="adminEmail" name="adminEmail" placeholder="Enter admin email" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Password</label>
+                    <div style="position: relative;">
+                        <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter password" required>
+                        <span class="password-toggle" onclick="togglePassword('adminPassword')">👁️</span>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Login as Admin</button>
+            </form>
+
+            <div class="feature-highlight">
+                🔐 Secure Admin Access • Manage Users • Review Leave Requests
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const toggle = input.nextElementSibling;
+            if (input.type === 'password') {
+                input.type = 'text';
+                toggle.textContent = '🙈';
+            } else {
+                input.type = 'password';
+                toggle.textContent = '👁️';
+            }
+        }
+
+        document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('adminEmail').value;
+            const password = document.getElementById('adminPassword').value;
+
+            if (email && password) {
+                alert(`Welcome Admin! Redirecting to Admin Dashboard...`);
+                // Add API call for real admin authentication here
+            }
+        });
+    </script>
+</body>
+</html>
+
