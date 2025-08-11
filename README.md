@@ -1,4 +1,4 @@
-# 🏫 Teacher Leave Management - Login Page
+# 🏫 Facualty Leave Management - Login Page
 
 This project is part of the **Teacher Leave Management System** and focuses on the **Login Page** functionality.  
 It provides a professional, responsive, and user-friendly interface for teachers and administrators to log in and access the leave management dashboard.
