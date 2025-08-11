@@ -12,7 +12,48 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahohyv, Geenav, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, , Verdana, sans-serif;
+            background: linear-gradient(135deg, #7667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+ .auth-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdpro-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            animation: sliedPu 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {+
+                opacity: 1;
+                transform: translateY(0);
+            }
+}
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: ', Verdana, sans-serif;
             background: linear-gradient(135deg, #7667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -334,7 +375,8 @@ i
                 </div>
                 
                 <div class="form-group">
-                    <label for="employeeId">Employee Identification Number</label>
+                    <label for="employeeId">Employee ID</label>
+                    <label for="employeeId">Staff ID</label>
                     <input type="text" id="employeeId" name="employeeId" placeholder="Enter your employee ID" required>
                 </div>
                 
